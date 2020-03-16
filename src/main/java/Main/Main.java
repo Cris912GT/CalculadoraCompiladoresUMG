@@ -101,7 +101,7 @@ public class Main {
             //          INSERTAR OPERADORES MATEMATICOS A LA COLA
             if (PreToken.equals(tokenSuma)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -109,7 +109,7 @@ public class Main {
             }
             if (PreToken.equals(tokenResta)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -117,7 +117,7 @@ public class Main {
             }
             if (PreToken.equals(tokenMultiplicacion)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -125,7 +125,7 @@ public class Main {
             }
             if (PreToken.equals(tokenDivision)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -137,7 +137,7 @@ public class Main {
             //            INSERTAR SIGNOS DE AGRUPACION A LA COLA
             if (PreToken.equals(tokenParentesisAper)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -145,7 +145,7 @@ public class Main {
             }
             if (PreToken.equals(tokenParentesisClaus)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -153,7 +153,7 @@ public class Main {
             }
             if (PreToken.equals(tokenCorcheteAper)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -161,7 +161,7 @@ public class Main {
             }
             if (PreToken.equals(tokenCorhceteClaus)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -169,7 +169,7 @@ public class Main {
             }
             if (PreToken.equals(tokenLlaveAper)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -177,7 +177,7 @@ public class Main {
             }
             if (PreToken.equals(tokenLlaveClaus)) {
                 insertNumCola();
-                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                LexicoJframe.AnalisisTF.setText("El token reconocido es:" + PreToken);
                 //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
@@ -188,7 +188,7 @@ public class Main {
             
             //              ELIMINACION DE ESPACIOS EN BLANCO
             if (PreToken.equals(" ")) {
-                LexicoJframe.LexicoTF.setText("Se ha eliminado un espacio en blanco" + PreToken);
+                LexicoJframe.AnalisisTF.setText("Se ha eliminado un espacio en blanco" + PreToken);
                 //System.out.println("Se ha eliminado un espacio en blanco" + PreToken);
                 PreToken = "";
             }
@@ -197,10 +197,10 @@ public class Main {
             
             // INSERTAR UN NUMERO A LA VARIABLE num PARA SU POSETERIOR INSERCION
             if (esNumero(PreToken)){
-                 LexicoJframe.LexicoTF.setText("El token reconocido es un valor numerico: " + PreToken);
+                 LexicoJframe.AnalisisTF.setText("El token reconocido es un valor numerico: " + PreToken);
                 //System.out.println("El token reconocido es un valor numerico: " + PreToken);
                 num = num + PreToken;
-                 LexicoJframe.LexicoTF.setText("Se ha agragado el digito " + PreToken + " al numero: " + num);
+                 LexicoJframe.AnalisisTF.setText("Se ha agragado el digito " + PreToken + " al numero: " + num);
                 //System.out.println("Se ha agragado el digito " + PreToken + " al numero: " + num);
                 insertnum = false;
                 PreToken = "";
@@ -224,9 +224,12 @@ public class Main {
             
             //       LANZA UN ERROR DEBIDO A QUE NO SE ADMITEN LETRAS
             if (esLetra(letraR)){
-                System.out.println(ANSI_RED + "ERROR. El caracter en la pocicion " 
+                LexicoJframe.ErrorTF.setText("ERROR. El caracter en la pocicion " 
                                     + NoDeToken + " es una letra por lo que no se"
-                                    + " puede realizar el procesamiento."+ ANSI_RESET);
+                                    + " puede realizar el procesamiento.");
+                /*System.out.println(ANSI_RED + "ERROR. El caracter en la pocicion "    
+                                    + NoDeToken + " es una letra por lo que no se"
+                                    + " puede realizar el procesamiento."+ ANSI_RESET);*/
                 PreToken = "";
             }
             
