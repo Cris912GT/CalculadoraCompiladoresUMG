@@ -282,7 +282,8 @@ public class Main {
 
     /*Metodo para mostrar la cadena almacenada en la variable de la primera cadena procesada*/
     public static void MostrarACP1(){
-        System.out.println("La Cadena procesada 1 es: " + cadenaProcesada1);
+        LexicoJframe.AnalisisTF.setText("La Cadena procesada 1 es: " + cadenaProcesada1);
+        //System.out.println("La Cadena procesada 1 es: " + cadenaProcesada1);
     }
     
     /*Metodo para revisar que los parentesis, corchetes y llaves esten equilibrados*/
