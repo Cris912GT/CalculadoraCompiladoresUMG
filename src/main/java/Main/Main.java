@@ -6,6 +6,7 @@
 package Main;
 import java.io.*;
 import javax.swing.JOptionPane;
+import vistas.LexicoJframe;
 
 /**
  *
@@ -42,6 +43,9 @@ public class Main {
             f.delete();
             f.createNewFile();
         }
+        LexicoJframe ejecucion =new LexicoJframe();
+        ejecucion.setVisible(true);
+        
        /* ColaTokens.insertar(" ");
         String cadena1 = JOptionPane.showInputDialog("Ingrese la operacion a procesar","Insertar ecuacion");
         SeparacionTokens(cadena1);
