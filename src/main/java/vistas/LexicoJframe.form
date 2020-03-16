@@ -49,9 +49,9 @@
                               <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                  <Component id="jTextField2" min="-2" pref="133" max="-2" attributes="0"/>
+                                  <Component id="LexicoTF" min="-2" pref="133" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jTextField3" min="-2" pref="133" max="-2" attributes="0"/>
+                                  <Component id="SintecticoTF" min="-2" pref="133" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -78,8 +78,8 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField2" alignment="3" min="-2" pref="233" max="-2" attributes="0"/>
-                  <Component id="jTextField3" alignment="3" min="-2" pref="233" max="-2" attributes="0"/>
+                  <Component id="LexicoTF" alignment="3" min="-2" pref="233" max="-2" attributes="0"/>
+                  <Component id="SintecticoTF" alignment="3" min="-2" pref="233" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
@@ -120,7 +120,7 @@
         <Property name="text" type="java.lang.String" value="Analisis Lexico "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="LexicoTF">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -130,9 +130,9 @@
         <Property name="text" type="java.lang.String" value="Analisis Sintactico"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="SintecticoTF">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SintecticoTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
