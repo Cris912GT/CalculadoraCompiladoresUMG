@@ -45,7 +45,10 @@ public class Main {
         String cadena1 = JOptionPane.showInputDialog("Ingrese la operacion a procesar","Insertar ecuacion");
         SeparacionTokens(cadena1);
         MostrarACP1();
-        comprobarSimbolosDeContencion(cadena1);
+        //comprobarSimbolosDeContencion(cadena1);
+        
+        System.out.println("\n\n\n");
+        //primercaracter();
     }
     
     /*Metodo utilizado para realizar la validacion de tokens y eliminar espacios en la cadena*/
@@ -77,9 +80,7 @@ public class Main {
         for (int i = 0; i < (cadena.length()); i++){
             char letra = cadena.charAt(i);
             String letraR = Character.toString(letra);
-            /*System.out.print ("Caracter: " + letra);*/
             PreToken = PreToken + letra;
-            /*System.out.println(".....  El token actual en cadena es: "+ PreToken);*/
             
             
             //          INSERTAR OPERADORES MATEMATICOS A LA COLA
@@ -243,7 +244,7 @@ public class Main {
         }
     }
     
-    /*Metodo para insertar valores en la variable de la promera cadena procesada*/
+    /*Metodo para insertar valores en la variable de la primera cadena procesada*/
     public static void insertarACP1(String PreToken){
         cadenaProcesada1 = cadenaProcesada1 + PreToken;
     }
@@ -314,7 +315,50 @@ public class Main {
         }
     }
     
+    //VERIFICAMOS QUE EL PRIMER CARACTER SEA VALIDO
+    public static boolean validarPrimerCaracter(){
+        if(primercaracter().equals("er")){
+            System.out.println(ANSI_RED + "ERROR EL PRIMER CARACTER NO ES VALIDO" + ANSI_RESET);
+            return true;
+        }
+        if(primercaracter().equals("")){
+        }
+        return true;
+    }
+    
     //ESTABLECEMOS LAS REGLAS QUE SEGUIRA EL COMPILADOR----------------------------------------------------------------------
-    public static void primercaracter(){
+    public static String primercaracter(){
+        //          DEFINIMOS LAS VARIABLES A UTILIZAR
+        String tokenActual = "";
+        ColaTokens.extraer();
+        tokenActual = ColaTokens.extraer();
+        
+        if((esNumero(tokenActual))){
+            return "num";
+        }
+        else if(tokenActual.equals("(")){
+            return "pA";
+        }
+        else if(tokenActual.equals("{")){
+            return "lA";
+        }
+        else if(tokenActual.equals("[")){
+            return "cA";
+        }
+        else if(tokenActual.equals("-")){
+            return "sM";
+        }
+        else {
+            System.out.println(ANSI_RED + " ERROR: El primer caracter de la operacion no es valido....");
+            
+            return "er";
+        }
+        /*
+        try {
+            
+        }
+        catch(Exception exc){
+        }
+        */
     }
 }
