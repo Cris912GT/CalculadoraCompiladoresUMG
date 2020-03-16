@@ -188,7 +188,8 @@ public class Main {
             
             //              ELIMINACION DE ESPACIOS EN BLANCO
             if (PreToken.equals(" ")) {
-                System.out.println("Se ha eliminado un espacio en blanco" + PreToken);
+                LexicoJframe.LexicoTF.setText("Se ha eliminado un espacio en blanco" + PreToken);
+                //System.out.println("Se ha eliminado un espacio en blanco" + PreToken);
                 PreToken = "";
             }
             
@@ -196,9 +197,11 @@ public class Main {
             
             // INSERTAR UN NUMERO A LA VARIABLE num PARA SU POSETERIOR INSERCION
             if (esNumero(PreToken)){
-                System.out.println("El token reconocido es un valor numerico: " + PreToken);
+                 LexicoJframe.LexicoTF.setText("El token reconocido es un valor numerico: " + PreToken);
+                //System.out.println("El token reconocido es un valor numerico: " + PreToken);
                 num = num + PreToken;
-                System.out.println("Se ha agragado el digito " + PreToken + " al numero: " + num);
+                 LexicoJframe.LexicoTF.setText("Se ha agragado el digito " + PreToken + " al numero: " + num);
+                //System.out.println("Se ha agragado el digito " + PreToken + " al numero: " + num);
                 insertnum = false;
                 PreToken = "";
             }
