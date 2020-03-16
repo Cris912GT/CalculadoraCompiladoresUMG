@@ -73,6 +73,8 @@ public class Main {
         String tokenCorhceteClaus = "]";
         String tokenLlaveAper = "{";
         String tokenLlaveClaus = "}";
+        String tokenRaiz = "#";
+        String tokenPotencia = "^";
         
         //Variables de prueba o de uso temporales
         //int numActual=0;
