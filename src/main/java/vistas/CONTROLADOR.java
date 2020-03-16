@@ -10,5 +10,5 @@ package vistas;
  * @author Baran Mata
  */
 public class CONTROLADOR {
-    
+   
 }

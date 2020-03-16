@@ -30,6 +30,7 @@ public class Main {
     static boolean insertnum = true;
     static String num =  "";
     static Colas ColaTokens = new Colas();
+    static String cadena1;
     
     public static void main(String [] Args) throws IOException{
         /*Creacion del archivo de texto a utilizar*/
@@ -41,15 +42,23 @@ public class Main {
             f.delete();
             f.createNewFile();
         }
-        ColaTokens.insertar(" ");
+       /* ColaTokens.insertar(" ");
         String cadena1 = JOptionPane.showInputDialog("Ingrese la operacion a procesar","Insertar ecuacion");
         SeparacionTokens(cadena1);
         MostrarACP1();
-        //comprobarSimbolosDeContencion(cadena1);
+        //comprobarSimbolosDeContencion(cadena1);*//*bryan lo comento*/
         
         System.out.println("\n\n\n");
         //primercaracter();
     }
+    
+     public static void Main(String Cadena) {/*Recibo la cadena de la caja de texto*/
+        ColaTokens.insertar(" ");
+        cadena1 = Cadena;
+        SeparacionTokens(cadena1);
+        MostrarACP1();
+        }
+    
     
     /*Metodo utilizado para realizar la validacion de tokens y eliminar espacios en la cadena*/
     private static void SeparacionTokens(String cadena1){
