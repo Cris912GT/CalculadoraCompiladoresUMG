@@ -101,28 +101,32 @@ public class Main {
             //          INSERTAR OPERADORES MATEMATICOS A LA COLA
             if (PreToken.equals(tokenSuma)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenResta)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenMultiplicacion)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenDivision)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
@@ -133,42 +137,48 @@ public class Main {
             //            INSERTAR SIGNOS DE AGRUPACION A LA COLA
             if (PreToken.equals(tokenParentesisAper)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenParentesisClaus)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenCorcheteAper)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenCorhceteClaus)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenLlaveAper)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
             }
             if (PreToken.equals(tokenLlaveClaus)) {
                 insertNumCola();
-                System.out.println("El token reconocido es: " + PreToken);
+                LexicoJframe.LexicoTF.setText("El token reconocido es:" + PreToken);
+                //System.out.println("El token reconocido es: " + PreToken);
                 insertarACP1(PreToken);
                 insertarEnColaTokens(PreToken);
                 PreToken = "";
